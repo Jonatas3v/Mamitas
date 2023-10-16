@@ -1,17 +1,91 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+    MEUS PEDIDOS
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Último pedido</ion-card-title>
+      <ion-card-subtitle>(1) sopa de abóbora <br> (2) sucos detox </ion-card-subtitle>
+      
+      <ion-button expand="full" color="warning" routerLink="/tabs/tab2">Adicionar no carrinho</ion-button>
+      </ion-card-header>
+  </ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <!-- Histórico dos pedidos -->
+
+  <h3>Histórico</h3>
+
+  <ion-card-content>
+    Sex. 13 outubro 2023
+  </ion-card-content>
+
+  <!-- Card 1 -->
+
+  <ion-card class="historico">
+    <ion-card-header>
+    <ion-item routerLink="/tabs/tab2">
+      <img src="assets/comida.png" alt="">
+      <p>Janta</p>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="checkmark-circle"></ion-icon>
+        <p class="pedido">Pedido concluído - N° 125</p>
+      </ion-item>
+      <p class="pratos">(1) Salmão com legumes <br>
+      (1) Canelone de abobrinha <br>
+      (2) Suco - Abacaxi com hortelã</p>
+      </ion-card-header>
+  </ion-card>
+<br>
+  <!-- Card 2 -->
+
+  <ion-card-content>
+    Seg. 2 outubro 2023
+  </ion-card-content>
+
+  <ion-card class="historico">
+    <ion-card-header>
+    <ion-item routerLink="/tabs/tab2">
+      <img class="img2" src="assets/sanduiche.png" alt="">
+      <p>Lanche</p>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="checkmark-circle"></ion-icon>
+        <p class="pedido">Pedido concluído - N° 112</p>
+      </ion-item>
+      <p class="pratos">(1) Coxinha de batata doce <br>
+      (2) Biscoito caseiro <br>
+      (1) Suco - Beterraba com morango e chia</p>
+      </ion-card-header>
+  </ion-card>
+<br>
+
+    <!-- Card 3 -->
+
+    <ion-card-content>
+      Qui. 21 setembro 2023
+    </ion-card-content>
+  
+    <ion-card class="historico">
+      <ion-card-header>
+      <ion-item routerLink="/tabs/tab2">
+        <img src="assets/almoco.png" alt="">
+        <p>Lanche</p>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="checkmark-circle"></ion-icon>
+          <p class="pedido">Pedido concluído - N° 99</p>
+        </ion-item>
+        <p class="pratos">(2) Caldo de Aipim<br>
+        (1) Croquete de carne <br>
+        (1) Suco - Detox de couve</p>
+        </ion-card-header>
+    </ion-card>
+
 </ion-content>
