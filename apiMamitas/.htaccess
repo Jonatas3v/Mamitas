@@ -1,0 +1,18 @@
+RewriteEngine on
+#----- USUÁRIOS -----
+# Localiza todos os registros
+RewriteRule ^usuario/?$ api_usuario.php
+# Localiza os registros pelo id
+RewriteRule ^usuario/([0-9]+)?$ api_usuario.php?id=$1
+# Localiza os registros pelo email
+RewriteRule ^usuario/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?$ api_usuario.php?email=$1 [L]
+# ----Também funciona para a localização de registros pelo email----
+# RewriteRule ^usuario/([^/]+)/?$ api_usuario.php?email=$1 [L]
+# Localiza registro pelo CPF
+RewriteRule ^usuario/([^/]+)/?$ api_usuario.php?cpf=$1 [QSA]
+
+#---- PRODUTOS ----
+#localiza todos os registros
+RewriteRule ^produtos/?$ api_produto.php
+#localiza os registros pelo id
+RewriteRule ^produtos/([0-9]+)?$ api_produto.php?id=$1
