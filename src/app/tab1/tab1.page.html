@@ -1,19 +1,87 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      HOME
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
 
-      <ion-title size="large">eu sou louca maluca pirada</ion-title>
+  <!-- barra de busca -->
 
-    </ion-toolbar>
-  </ion-header>
+  <ion-searchbar color="medium" placeholder="Busca" value="value"></ion-searchbar>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <!-- icones refeições -->
+
+  <div class="wrapper">
+  <div class="ion-activatable ripple-parent circle"  style=" background-color: #CE40B4;" #F7A623;>
+    <img src="assets/refeicao.png" routerLink="/tabs/tab2" alt="" width="45px">
+    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+  </div>
+
+  <div class="ion-activatable ripple-parent circle"  style=" background-color: #982AB5;" #F7A623;>
+    <img src="assets/lanche.png" alt="" width="50px">
+    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+  </div>
+
+  <div class="ion-activatable ripple-parent circle"  style=" background-color: #EBC625;" #F7A623;>
+    <img src="assets/suco.png" alt="" width="50px">
+    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+  </div>
+
+  <div class="ion-activatable ripple-parent circle"  style=" background-color: #F7A623;" #F7A623;>
+    <img src="assets/sopa.png" alt="" width="50px">
+    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+  </div>
+</div>
+
+
+  <!-- pacotes -->
+
+  <div>
+  <ion-item>
+    <img src="assets/banner pacotes.png" routerLink="/tabs/tab2" alt="" style="border-radius: 5px;">
+  </ion-item>
+  </div>
+
+  <br><br><br>
+
+  <!-- produtos mais vendidos -->
+
+  <h2>Mais vendidos</h2>
+
+ <ion-content class="card-background-page">
+  <ion-row>
+    <ion-col>
+        <div class="ion-text-center">
+          <img src="assets/coxinha.jpg" alt="" width="150px">
+          <h3>Coxinha de <br> batata doce</h3>
+        </div>
+    </ion-col>
+    <ion-col>
+        <div class="ion-text-center">
+          <img src="assets/sopaabobora.jpg" alt="" width="150px">
+          <h3>Sopa de <br> abóbora</h3>
+        </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+        <div class="ion-text-center">
+          <img src="assets/panqueca.jpg" alt="" width="150px">
+          <h3>Panqueca de <br> banana</h3>
+        </div>
+    </ion-col>
+    <ion-col>
+        <div class="ion-text-center">
+          <img src="assets/salmao.jpg" alt="" width="150px">
+          <h3>Salmão com <br> legumes</h3>
+        </div>
+    </ion-col>
+  </ion-row>
+ </ion-content>
+
+
 </ion-content>
